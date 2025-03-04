@@ -124,8 +124,8 @@ const CustomWebAppBrand = () => {
                 POWERED BY
                 {
                   webappLogo
-                    ? <img src={`${webappLogo}?hash=${imgKey}`} alt='logo' className='ml-2 block w-auto h-5' />
-                    : <LogoSite className='ml-2 !h-5' />
+                    ? <img src="/koality-technology-logo.png" alt='Koality Technology" alt='logo' className='ml-2 block w-auto h-5' />
+                    : <img src="/koality-technology-logo.png" alt='Koality Technology' className='ml-2 block w-auto h-5' />
                 }
               </div>
             )

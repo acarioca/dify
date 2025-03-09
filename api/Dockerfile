@@ -36,10 +36,13 @@ FROM base AS production
 ENV FLASK_APP=app.py
 ENV EDITION=SELF_HOSTED
 ENV DEPLOY_ENV=PRODUCTION
-ENV CONSOLE_API_URL=http://127.0.0.1:5001
-ENV CONSOLE_WEB_URL=http://127.0.0.1:3000
-ENV SERVICE_API_URL=http://127.0.0.1:5001
-ENV APP_WEB_URL=http://127.0.0.1:3000
+ENV CONSOLE_API_URL=https://dify-backend.fly.dev
+ENV CONSOLE_WEB_URL=https://dify-frontend.fly.dev
+ENV SERVICE_API_URL=https://dify-backend.fly.dev
+ENV APP_WEB_URL=https://dify-frontend.fly.dev
+ENV FILES_URL=https://dify-backend.fly.dev
+ENV WEB_API_CORS_ALLOW_ORIGINS=https://dify-frontend.fly.dev,*
+ENV CONSOLE_CORS_ALLOW_ORIGINS=https://dify-frontend.fly.dev,*
 
 EXPOSE 5001
 

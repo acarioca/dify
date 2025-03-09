@@ -343,7 +343,7 @@ class TraceTask:
         self.conversation_id = conversation_id
         self.user_id = user_id
         self.timer = timer
-        self.file_base_url = os.getenv("FILES_URL", "http://127.0.0.1:5001")
+        self.file_base_url = os.getenv("FILES_URL", "https://dify-backend.fly.dev")
         self.app_id = None
 
         self.kwargs = kwargs

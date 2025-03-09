@@ -75,7 +75,7 @@ class OpikDataTrace(BaseTraceInstance):
             api_key=opik_config.api_key,
         )
         self.project = opik_config.project
-        self.file_base_url = os.getenv("FILES_URL", "http://127.0.0.1:5001")
+        self.file_base_url = os.getenv("FILES_URL", "https://dify-backend.fly.dev")
 
     def trace(self, trace_info: BaseTraceInfo):
         if isinstance(trace_info, WorkflowTraceInfo):
